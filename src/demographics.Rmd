@@ -1,0 +1,111 @@
+---
+title: "Untitled"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidycensus)
+library(acs)
+library(dplyr)
+library(sf)
+library(ggplot2)
+library(ggthemes)
+library(viridis)
+library(scales)
+library(naniar)
+library(readr)
+
+# variable list 
+acs_variable_list <- load_variables(2017, "acs5", cache = TRUE)
+# https://data.census.gov/cedsci/ 
+
+census_api_key("5ff64f429a9814777a1756f1ab3665a07d46b6a5") # Brandon's Key
+```
+
+Chetty et al. (2014) identified five core factors correlated with economic mobility. Economic mobility is correlated with several neighborhood characteristics, including:
+
+•	Segregation by race and poverty quantified by the fraction of non-Hispanic whites (~ -0.4); the fraction of individuals in poverty defined as the bottom income quartile (~ -0.5); and fraction of individuals who commute less than 15 minutes to work in a commuter zone (~ +0.6).
+•	Quality of the K-12 school system quantified by output measures such income-adjusted test scores (~ +0.6) and high school graduation rate (~ +0.6); 
+•	Social capital quantified by the social capital index, the index is comprised of voter turnout rates; the fraction of people who return their decennial census forms; and various measures of participation in community organizations (~ +0.6);
+•	Family structure quantified by the fraction of children living in single-parent households (~ -0.7); the fraction of adults who are divorced (~ -0.5); and the fraction of adults who are married (~ +0.6);
+•	Income inequality quantified by the Gini coefficient (~ -0.6); and the fraction of households in the middle class defined as the fraction of with incomes between the 1st and 3rd quartiles (~ +0.7).
+
+We want to compare these factors in 2010 and 2018. 
+
+```{r pull_acs_data, echo=FALSE}
+tables <- c(
+  "B01001", # age 
+  "B02001",  # sex/gender and race/ethnicity 
+  "B05010", # poverty status 
+  "",
+) 
+
+# Get tables for counties --------------------------------------------------------------------------------------
+
+# Iowa (FIPS 19)
+dataia <- get_acs(geography = "county", state = 19, table = tables[1], year = 2018, survey = "acs5", 
+                  cache_table = TRUE, output = "wide", geometry = TRUE, keep_geo_vars = TRUE)
+for(i in 2:length(tables)){
+  tmp <- get_acs(geography = "county", state = 19, table = tables[i],year = 2018, survey = "acs5", 
+                 cache_table = TRUE, output = "wide", geometry = FALSE)
+  dataia <- left_join(dataia, tmp)
+}
+remove(tmp)
+
+# Oregon (FIPS 41)
+dataor <- get_acs(geography = "county", state = 41, table = tables[1], year = 2018, survey = "acs5", 
+                  cache_table = TRUE, output = "wide", geometry = TRUE, keep_geo_vars = TRUE)
+for(i in 2:length(tables)){
+  tmp <- get_acs(geography = "county", state = 41, table = tables[i],year = 2018, survey = "acs5", 
+                 cache_table = TRUE, output = "wide", geometry = FALSE)
+  dataor <- left_join(dataor, tmp)
+}
+remove(tmp)
+
+# Virginia (FIPS 51)
+datava <- get_acs(geography = "county", state = 51, table = tables[1], year = 2018, survey = "acs5", 
+                  cache_table = TRUE, output = "wide", geometry = TRUE, keep_geo_vars = TRUE)
+for(i in 2:length(tables)){
+  tmp <- get_acs(geography = "county", state = 51, table = tables[i],year = 2018, survey = "acs5", 
+                 cache_table = TRUE, output = "wide", geometry = FALSE)
+  datava <- left_join(datava, tmp)
+}
+remove(tmp)
+
+# Join
+data <- rbind(dataia, dataor, datava)
+
+data <- data %>% transmute(
+  STATEFP = STATEFP, 
+  COUNTYFP = COUNTYFP, 
+  COUNTYNS = COUNTYNS, 
+  AFFGEOID = AFFGEOID, 
+  GEOID = GEOID, 
+  LSAD = LSAD, 
+  NAME.x = NAME.x, 
+  NAME.y = NAME.y,
+  NAME = NAME,
+  ALAND = ALAND, 
+  AWATER = AWATER, 
+  geometry = geometry,
+  # comment here 
+  int_dialup = B28002_003E / B28002_001E * 100,
+  
+)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
