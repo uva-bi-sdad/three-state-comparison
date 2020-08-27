@@ -7,7 +7,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 
 library(tidycensus)
-library(acs)
+library(acs) 
 library(dplyr)
 library(sf)
 library(ggplot2)
