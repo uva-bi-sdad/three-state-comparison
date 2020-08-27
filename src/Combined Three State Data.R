@@ -18,7 +18,7 @@ IRR<-read_excel("~/git/CLD3/DATA/IRR_2010.xlsx")
  #Data downloaded from MIT Election Data + Science Lab
  #https://electionlab.mit.edu/
   library(readxl)
-  SC <- read_excel("git/CLD3/DATA/election-context-2018.xlsx", 
+  SC <- read_excel("~git/CLD3/DATA/election-context-2018.xlsx", 
                    col_types = c("text", "text", "text", 
                                  "numeric", "numeric", "blank", "blank", 
                                  "blank", "blank", "blank", "blank", 
@@ -30,7 +30,7 @@ IRR<-read_excel("~/git/CLD3/DATA/IRR_2010.xlsx")
                                  "blank", "blank", "blank", "blank", 
                                  "blank", "blank", "blank", "blank"))
  dim(SC)
- SC<-SC[-which(SC[,3]=="51515"), ]; dim(IRR)
+ SC<-SC[-which(SC[,3]=="51515"),c(1:5,23) ]; dim(SC)
  #Calculate fraction of voters in 2016 election
  Num<-(SC$trump16+SC$clinton16)
  Den<-SC$cvap
@@ -106,7 +106,27 @@ IRR<-read_excel("~/git/CLD3/DATA/IRR_2010.xlsx")
  IRR<-merge(temp, IRR, by="GEOID"); dim(IRR)
  rm(temp)
  
+ #############################################################################
+ #Fraction of Non-whites
+ #ACS 5-YR 2018 
+ #Calculated as: (NW$C02003_001E-NW$C02003_003E)/(NW$C02003_001E)
+ NHWvars<-
+   c(
+     #Total population of one race White
+     "C02003_003",
+     #Total population
+     "C02003_001"
+   )
+ NHW<-tidycensus::get_acs(geography="county", state=c(19, 41, 51), variables=NHWvars, year=2018, survey="acs5",
+                          cache_table=TRUE, output="wide", geometry=FALSE, keep_geo_vars=FALSE)
+ View(NHW)
+ Num<-(NHW$C02003_003E)
+ Den<-(NHW$C02003_001E)
+ Rate<-Num/Den
+ temp<-data.frame(GEOID=NHW$GEOID, NHW=Rate)
+ temp$GEOID<-as.numeric(as.character(NHW$GEOID))
+ IRR<-merge(temp, IRR, by="GEOID"); dim(IRR)
+ rm(temp)
  
- CT_final<-merge(CT_final[,c(3,4,5)], SC_final[,c(1,4)], by="GEOID")  
- CT_final<-merge(CT_final, IRR[,c(1,3)], by="GEOID")  
- View(CT)
+ View(IRR)
+ 
