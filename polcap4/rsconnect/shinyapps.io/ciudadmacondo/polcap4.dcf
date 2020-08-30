@@ -1,0 +1,12 @@
+name: polcap4
+title: polcap4
+username:
+account: ciudadmacondo
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2719292
+bundleId: 3567109
+url: https://ciudadmacondo.shinyapps.io/polcap4/
+when: 1598621333.2888
+asMultiple: FALSE
+asStatic: FALSE

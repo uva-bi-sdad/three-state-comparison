@@ -1,0 +1,12 @@
+name: polcap4
+title: polcap4
+username:
+account: cesar-montalvo
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2721140
+bundleId: 3568413
+url: https://cesar-montalvo.shinyapps.io/polcap4/
+when: 1598647080.69824
+asMultiple: FALSE
+asStatic: FALSE
