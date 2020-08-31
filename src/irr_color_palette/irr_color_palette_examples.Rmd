@@ -1,0 +1,82 @@
+---
+title: "Rurality Color Palette"
+author: "Sarah McDonald"
+date: "8/31/2020"
+output: html_document
+---
+
+```{r}
+library(tidycensus)
+library(ggplot2)
+library(sf)
+```
+
+
+This file compares palette ideas for displaying rurality measures, using the [Index of Relative Rurality (IRR)](https://purr.purdue.edu/publications/2960/1). 
+
+First, we read in the data that Brandon compiled: 
+
+```{r}
+three_state_df <- read.csv("~/three-state-comparison/data/ThreeState_data.csv")
+```
+
+Next we use the tidycensus package to acquire county-level shapefiles and merge it to our three state data.
+
+```{r, warning = F, message = F, results = 'hide'}
+state_geo <- get_acs(geography="county", 
+  state=c(19, 41, 51), #IA = 19, OR = 41, VA = 51
+  variables="C02003_001", # we have to define a variable for the function to work, will be removed since we don't need this data
+  year=2018, 
+  survey="acs5", 
+  cache_table=TRUE, 
+  output="wide", 
+  geometry=TRUE, 
+  keep_geo_vars=TRUE
+)
+
+state_geo <- state_geo[, c("STATEFP", "GEOID")]
+
+three_state_df <- merge(three_state_df, state_geo, by = "GEOID")
+st_geometry(three_state_df) <- three_state_df$geometry
+```
+
+
+
+```{r}
+ggplot() + 
+  geom_sf(data = three_state_df[three_state_df$STATEFP == 19, ], aes(fill = IRR)) + 
+  theme(panel.background = element_rect(fill  = "transparent"),
+        plot.title = element_text(size = 14, face = "bold", hjust = 0.5),
+        legend.title = element_text(size = 11, face = "bold"),
+        legend.text = element_text(size = 11),
+        legend.position = "right", 
+        axis.title = element_blank(),
+        axis.text = element_blank(),
+        axis.ticks = element_blank())
+
+ggplot() + 
+  geom_sf(data = three_state_df[three_state_df$STATEFP == 41, ], aes(fill = IRR)) + 
+  theme(panel.background = element_rect(fill  = "transparent"),
+        plot.title = element_text(size = 14, face = "bold", hjust = 0.5),
+        legend.title = element_text(size = 11, face = "bold"),
+        legend.text = element_text(size = 11),
+        legend.position = "right", 
+        axis.title = element_blank(),
+        axis.text = element_blank(),
+        axis.ticks = element_blank())
+
+ggplot() + 
+  geom_sf(data = three_state_df[three_state_df$STATEFP == 51, ], aes(fill = IRR)) + 
+  theme(panel.background = element_rect(fill  = "transparent"),
+        plot.title = element_text(size = 14, face = "bold", hjust = 0.5),
+        legend.title = element_text(size = 11, face = "bold"),
+        legend.text = element_text(size = 11),
+        legend.position = "right", 
+        axis.title = element_blank(),
+        axis.text = element_blank(),
+        axis.ticks = element_blank())
+
+```
+
+
+
