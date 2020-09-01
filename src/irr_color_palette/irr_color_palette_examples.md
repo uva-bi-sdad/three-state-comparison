@@ -40,6 +40,140 @@ and merge it to our three state data.
 
     ThreeState$group <- factor(ThreeState$group, levels = c("< 0.2", "[0.2, 0.4)", "[0.4, 0.6)", "[0.6, 0.8)", "0.8 <="))
 
+Viridis Plasma 10 Category
+--------------------------
+
+    #Viridis Color Palette option=PLASMA
+    #https://www.thinkingondata.com/something-about-viridis-library/
+
+
+    PLASMA<-viridis_pal(option="plasma")(12)  
+    PLASMA <- PLASMA[2:11]
+
+
+    #ThreeState$group2[which(ThreeState$IRR<0.1)]= "< 0.1" there are not data values in this category for IA, OR, VA
+    ThreeState$group2[which(ThreeState$IRR>=0.1 & ThreeState$IRR<0.2)]= "[0.1, 0.2)"
+    ThreeState$group2[which(ThreeState$IRR>=0.2 & ThreeState$IRR<0.3)]= "[0.2, 0.3)"
+    ThreeState$group2[which(ThreeState$IRR>=0.3 & ThreeState$IRR<0.4)]= "[0.3, 0.4)"
+    ThreeState$group2[which(ThreeState$IRR>=0.4 & ThreeState$IRR<0.5)]="[0.4, 0.5)"
+    ThreeState$group2[which(ThreeState$IRR>=0.5 & ThreeState$IRR<0.6)]= "[0.5, 0.6)"
+    ThreeState$group2[which(ThreeState$IRR>=0.6 & ThreeState$IRR<0.7)]= "[0.6, 0.7)"
+    ThreeState$group2[which(ThreeState$IRR>=0.7 & ThreeState$IRR<0.8)]= "[0.7, 0.8)"
+    ThreeState$group2[which(ThreeState$IRR>=0.8 & ThreeState$IRR<0.9)]= "[0.8, 0.9)"
+    ThreeState$group2[which(ThreeState$IRR>=0.9)]= "0.9 <="
+
+
+    ThreeState$group2 <- factor(ThreeState$group2, levels = c("< 0.1", "[0.1, 0.2)", "[0.2, 0.3)", "[0.3, 0.4)","[0.4, 0.5)", "[0.5, 0.6)", "[0.6, 0.7)","[0.7, 0.8)", "[0.8, 0.9)",  "0.9 <="))
+
+
+
+    P4<-rep(NA, length=length(ThreeState$IRR))
+      #P4[which(ThreeState$IRR<0.1)]=PLASMA[1]
+      P4[which(ThreeState$IRR>=0.1 & ThreeState$IRR < 0.2)]=PLASMA[2]
+      P4[which(ThreeState$IRR>=0.2 & ThreeState$IRR < 0.3)]=PLASMA[3]
+      P4[which(ThreeState$IRR>=0.3 & ThreeState$IRR < 0.4)]=PLASMA[4]
+      P4[which(ThreeState$IRR>=0.4 & ThreeState$IRR < 0.5)]=PLASMA[5]
+      P4[which(ThreeState$IRR>=0.5 & ThreeState$IRR < 0.6)]=PLASMA[6]
+      P4[which(ThreeState$IRR>=0.6 & ThreeState$IRR < 0.7)]=PLASMA[7]
+      P4[which(ThreeState$IRR>=0.7 & ThreeState$IRR < 0.8)]=PLASMA[8]
+      P4[which(ThreeState$IRR>=0.8 & ThreeState$IRR < 0.9)]=PLASMA[9]
+      P4[which(ThreeState$IRR>=0.9)]=PLASMA[10]
+
+      
+    ggplot() + 
+      geom_sf(data = ThreeState[ThreeState$STATEFP == 19, ], aes(fill = group2), color = "white") + 
+      scale_fill_manual(values = c(PLASMA[4], PLASMA[5], PLASMA[6])) +
+      theme(panel.background = element_rect(fill  = "transparent"),
+            plot.title = element_text(size = 14, face = "bold", hjust = 0.5),
+            legend.title = element_text(size = 11, face = "bold"),
+            legend.text = element_text(size = 11),
+            legend.position = "right", 
+            axis.title = element_blank(),
+            axis.text = element_blank(),
+            axis.ticks = element_blank())
+    ggplot() + 
+      geom_sf(data = ThreeState[ThreeState$STATEFP == 41, ], aes(fill = group2), color = "white") + 
+      scale_fill_manual(values = c(PLASMA[3], PLASMA[4], PLASMA[5], PLASMA[6], PLASMA[7])) +
+      theme(panel.background = element_rect(fill  = "transparent"),
+            plot.title = element_text(size = 14, face = "bold", hjust = 0.5),
+            legend.title = element_text(size = 11, face = "bold"),
+            legend.text = element_text(size = 11),
+            legend.position = "right", 
+            axis.title = element_blank(),
+            axis.text = element_blank(),
+            axis.ticks = element_blank())
+    ggplot() + 
+      geom_sf(data = ThreeState[ThreeState$STATEFP == 51, ], aes(fill = group2), color = "white") + 
+      scale_fill_manual(values = c(PLASMA[2], PLASMA[3], PLASMA[4], PLASMA[5], PLASMA[6], PLASMA[7])) +
+      theme(panel.background = element_rect(fill  = "transparent"),
+            plot.title = element_text(size = 14, face = "bold", hjust = 0.5),
+            legend.title = element_text(size = 11, face = "bold"),
+            legend.text = element_text(size = 11),
+            legend.position = "right", 
+            axis.title = element_blank(),
+            axis.text = element_blank(),
+            axis.ticks = element_blank())
+
+<img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-4-1.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-4-2.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-4-3.png" width="50%" />
+
+Viridis 10 Category
+-------------------
+
+    #Viridis Color Palette option-VIRIDIS
+    #https://www.thinkingondata.com/something-about-viridis-library/
+    #https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html  
+
+    VIRIDIS<-viridis_pal()(12)  
+    VIRIDIS <- VIRIDIS[2:11]
+
+    P4<-rep(NA, length=length(ThreeState$IRR))
+      #P4[which(ThreeState$IRR<0.1)]=VIRIDIS[1]
+      P4[which(ThreeState$IRR>=0.1 & ThreeState$IRR < 0.2)]=VIRIDIS[2]
+      P4[which(ThreeState$IRR>=0.2 & ThreeState$IRR < 0.3)]=VIRIDIS[3]
+      P4[which(ThreeState$IRR>=0.3 & ThreeState$IRR < 0.4)]=VIRIDIS[4]
+      P4[which(ThreeState$IRR>=0.4 & ThreeState$IRR < 0.5)]=VIRIDIS[5]
+      P4[which(ThreeState$IRR>=0.5 & ThreeState$IRR < 0.6)]=VIRIDIS[6]
+      P4[which(ThreeState$IRR>=0.6 & ThreeState$IRR < 0.7)]=VIRIDIS[7]
+      P4[which(ThreeState$IRR>=0.7 & ThreeState$IRR < 0.8)]=VIRIDIS[8]
+      P4[which(ThreeState$IRR>=0.8 & ThreeState$IRR < 0.9)]=VIRIDIS[9]
+      P4[which(ThreeState$IRR>=0.9)]=VIRIDIS[10]
+
+    ggplot() + 
+      geom_sf(data = ThreeState[ThreeState$STATEFP == 19, ], aes(fill = group2), color = "white") + 
+      scale_fill_manual(values = c(VIRIDIS[4], VIRIDIS[5], VIRIDIS[6])) +
+      theme(panel.background = element_rect(fill  = "transparent"),
+            plot.title = element_text(size = 14, face = "bold", hjust = 0.5),
+            legend.title = element_text(size = 11, face = "bold"),
+            legend.text = element_text(size = 11),
+            legend.position = "right", 
+            axis.title = element_blank(),
+            axis.text = element_blank(),
+            axis.ticks = element_blank())
+    ggplot() + 
+      geom_sf(data = ThreeState[ThreeState$STATEFP == 41, ], aes(fill = group2), color = "white") + 
+      scale_fill_manual(values = c(VIRIDIS[3], VIRIDIS[4], VIRIDIS[5], VIRIDIS[6], VIRIDIS[7])) +
+      theme(panel.background = element_rect(fill  = "transparent"),
+            plot.title = element_text(size = 14, face = "bold", hjust = 0.5),
+            legend.title = element_text(size = 11, face = "bold"),
+            legend.text = element_text(size = 11),
+            legend.position = "right", 
+            axis.title = element_blank(),
+            axis.text = element_blank(),
+            axis.ticks = element_blank())
+    ggplot() + 
+      geom_sf(data = ThreeState[ThreeState$STATEFP == 51, ], aes(fill = group2), color = "white") + 
+      scale_fill_manual(values = c(VIRIDIS[2], VIRIDIS[3], VIRIDIS[4], VIRIDIS[5], VIRIDIS[6], VIRIDIS[7])) +
+      theme(panel.background = element_rect(fill  = "transparent"),
+            plot.title = element_text(size = 14, face = "bold", hjust = 0.5),
+            legend.title = element_text(size = 11, face = "bold"),
+            legend.text = element_text(size = 11),
+            legend.position = "right", 
+            axis.title = element_blank(),
+            axis.text = element_blank(),
+            axis.ticks = element_blank())
+
+<img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-5-1.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-5-2.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-5-3.png" width="50%" />
+
 ### Color Blind Palette
 
     cbPalette <- c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
@@ -89,7 +223,7 @@ and merge it to our three state data.
             axis.text = element_blank(),
             axis.ticks = element_blank())
 
-<img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-4-1.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-4-2.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-4-3.png" width="50%" />
+<img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-6-1.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-6-2.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-6-3.png" width="50%" />
 
 ### Evo Palette
 
@@ -139,7 +273,7 @@ and merge it to our three state data.
             axis.text = element_blank(),
             axis.ticks = element_blank())
 
-<img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-5-1.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-5-2.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-5-3.png" width="50%" />
+<img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-7-1.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-7-2.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-7-3.png" width="50%" />
 
 ### Evo Palette 2
 
@@ -194,7 +328,7 @@ and merge it to our three state data.
             axis.text = element_blank(),
             axis.ticks = element_blank())
 
-<img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-6-1.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-6-2.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-6-3.png" width="50%" />
+<img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-8-1.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-8-2.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-8-3.png" width="50%" />
 
 ### Viridis Plasma
 
@@ -245,7 +379,7 @@ and merge it to our three state data.
             axis.text = element_blank(),
             axis.ticks = element_blank())
 
-<img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-7-1.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-7-2.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-7-3.png" width="50%" />
+<img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-9-1.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-9-2.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-9-3.png" width="50%" />
 
 ### Viridis
 
@@ -296,7 +430,7 @@ and merge it to our three state data.
             axis.text = element_blank(),
             axis.ticks = element_blank())
 
-<img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-8-1.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-8-2.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-8-3.png" width="50%" />
+<img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-10-1.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-10-2.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-10-3.png" width="50%" />
 
 ### Color Picker
 
@@ -343,7 +477,7 @@ and merge it to our three state data.
             axis.text = element_blank(),
             axis.ticks = element_blank()) 
 
-<img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-9-1.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-9-2.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-9-3.png" width="50%" />
+<img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-11-1.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-11-2.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-11-3.png" width="50%" />
 
 Coolors
 
@@ -392,7 +526,7 @@ Coolors
             axis.text = element_blank(),
             axis.ticks = element_blank())   
 
-<img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-10-1.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-10-2.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-10-3.png" width="50%" />
+<img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-12-1.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-12-2.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-12-3.png" width="50%" />
 
 Coolors
 
@@ -441,4 +575,4 @@ Coolors
             axis.text = element_blank(),
             axis.ticks = element_blank()) 
 
-<img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-11-1.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-11-2.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-11-3.png" width="50%" />
+<img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-13-1.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-13-2.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-13-3.png" width="50%" />
