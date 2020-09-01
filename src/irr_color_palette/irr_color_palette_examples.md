@@ -46,10 +46,7 @@ Viridis Plasma 10 Category
     #Viridis Color Palette option=PLASMA
     #https://www.thinkingondata.com/something-about-viridis-library/
 
-
-    PLASMA<-viridis_pal(option="plasma")(12)  
-    PLASMA <- PLASMA[2:11]
-
+    PLASMA<-viridis_pal(option="plasma")(28)[seq(from=1, to=28, by=3)]
 
     #ThreeState$group2[which(ThreeState$IRR<0.1)]= "< 0.1" there are not data values in this category for IA, OR, VA
     ThreeState$group2[which(ThreeState$IRR>=0.1 & ThreeState$IRR<0.2)]= "[0.1, 0.2)"
@@ -123,8 +120,7 @@ Viridis 10 Category
     #https://www.thinkingondata.com/something-about-viridis-library/
     #https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html  
 
-    VIRIDIS<-viridis_pal()(12)  
-    VIRIDIS <- VIRIDIS[2:11]
+    VIRIDIS<-viridis_pal()(28)[seq(from=1, to=28, by=3)]
 
     P4<-rep(NA, length=length(ThreeState$IRR))
       #P4[which(ThreeState$IRR<0.1)]=VIRIDIS[1]
