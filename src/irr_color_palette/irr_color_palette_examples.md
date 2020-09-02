@@ -40,6 +40,79 @@ and merge it to our three state data.
 
     ThreeState$group <- factor(ThreeState$group, levels = c("< 0.2", "[0.2, 0.4)", "[0.4, 0.6)", "[0.6, 0.8)", "0.8 <="))
 
+### Sarah's Palette
+
+    #Viridis Color Palette option=PLASMA
+    #https://www.thinkingondata.com/something-about-viridis-library/
+
+    SARAH<-c("#440154","#382961","#2c516e","#467584","#60999a","#9fbe7a","#ced350","#fde725","#f1ad13","#e57200")
+
+
+    #ThreeState$group2[which(ThreeState$IRR<0.1)]= "< 0.1" there are not data values in this category for IA, OR, VA
+    ThreeState$group2[which(ThreeState$IRR>=0.1 & ThreeState$IRR<0.2)]= "[0.1, 0.2)"
+    ThreeState$group2[which(ThreeState$IRR>=0.2 & ThreeState$IRR<0.3)]= "[0.2, 0.3)"
+    ThreeState$group2[which(ThreeState$IRR>=0.3 & ThreeState$IRR<0.4)]= "[0.3, 0.4)"
+    ThreeState$group2[which(ThreeState$IRR>=0.4 & ThreeState$IRR<0.5)]="[0.4, 0.5)"
+    ThreeState$group2[which(ThreeState$IRR>=0.5 & ThreeState$IRR<0.6)]= "[0.5, 0.6)"
+    ThreeState$group2[which(ThreeState$IRR>=0.6 & ThreeState$IRR<0.7)]= "[0.6, 0.7)"
+    ThreeState$group2[which(ThreeState$IRR>=0.7 & ThreeState$IRR<0.8)]= "[0.7, 0.8)"
+    ThreeState$group2[which(ThreeState$IRR>=0.8 & ThreeState$IRR<0.9)]= "[0.8, 0.9)"
+    ThreeState$group2[which(ThreeState$IRR>=0.9)]= "0.9 <="
+
+
+    ThreeState$group2 <- factor(ThreeState$group2, levels = c("< 0.1", "[0.1, 0.2)", "[0.2, 0.3)", "[0.3, 0.4)","[0.4, 0.5)", "[0.5, 0.6)", "[0.6, 0.7)","[0.7, 0.8)", "[0.8, 0.9)",  "0.9 <="))
+
+
+
+    P4<-rep(NA, length=length(ThreeState$IRR))
+      #P4[which(ThreeState$IRR<0.1)]=SARAH[1]
+      P4[which(ThreeState$IRR>=0.1 & ThreeState$IRR < 0.2)]=SARAH[2]
+      P4[which(ThreeState$IRR>=0.2 & ThreeState$IRR < 0.3)]=SARAH[3]
+      P4[which(ThreeState$IRR>=0.3 & ThreeState$IRR < 0.4)]=SARAH[4]
+      P4[which(ThreeState$IRR>=0.4 & ThreeState$IRR < 0.5)]=SARAH[5]
+      P4[which(ThreeState$IRR>=0.5 & ThreeState$IRR < 0.6)]=SARAH[6]
+      P4[which(ThreeState$IRR>=0.6 & ThreeState$IRR < 0.7)]=SARAH[7]
+      P4[which(ThreeState$IRR>=0.7 & ThreeState$IRR < 0.8)]=SARAH[8]
+      P4[which(ThreeState$IRR>=0.8 & ThreeState$IRR < 0.9)]=SARAH[9]
+      P4[which(ThreeState$IRR>=0.9)]=SARAH[10]
+
+      
+    ggplot() + 
+      geom_sf(data = ThreeState[ThreeState$STATEFP == 19, ], aes(fill = group2), color = "white") + 
+      scale_fill_manual(values = c(SARAH[4], SARAH[5], SARAH[6])) +
+      theme(panel.background = element_rect(fill  = "transparent"),
+            plot.title = element_text(size = 14, face = "bold", hjust = 0.5),
+            legend.title = element_text(size = 11, face = "bold"),
+            legend.text = element_text(size = 11),
+            legend.position = "right", 
+            axis.title = element_blank(),
+            axis.text = element_blank(),
+            axis.ticks = element_blank())
+    ggplot() + 
+      geom_sf(data = ThreeState[ThreeState$STATEFP == 41, ], aes(fill = group2), color = "white") + 
+      scale_fill_manual(values = c(SARAH[3], SARAH[4], SARAH[5], SARAH[6], SARAH[7])) +
+      theme(panel.background = element_rect(fill  = "transparent"),
+            plot.title = element_text(size = 14, face = "bold", hjust = 0.5),
+            legend.title = element_text(size = 11, face = "bold"),
+            legend.text = element_text(size = 11),
+            legend.position = "right", 
+            axis.title = element_blank(),
+            axis.text = element_blank(),
+            axis.ticks = element_blank())
+    ggplot() + 
+      geom_sf(data = ThreeState[ThreeState$STATEFP == 51, ], aes(fill = group2), color = "white") + 
+      scale_fill_manual(values = c(SARAH[2], SARAH[3], SARAH[4], SARAH[5], SARAH[6], SARAH[7])) +
+      theme(panel.background = element_rect(fill  = "transparent"),
+            plot.title = element_text(size = 14, face = "bold", hjust = 0.5),
+            legend.title = element_text(size = 11, face = "bold"),
+            legend.text = element_text(size = 11),
+            legend.position = "right", 
+            axis.title = element_blank(),
+            axis.text = element_blank(),
+            axis.ticks = element_blank())
+
+<img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-4-1.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-4-2.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-4-3.png" width="50%" />
+
 Viridis Plasma 10 Category
 --------------------------
 
@@ -111,7 +184,7 @@ Viridis Plasma 10 Category
             axis.text = element_blank(),
             axis.ticks = element_blank())
 
-<img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-4-1.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-4-2.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-4-3.png" width="50%" />
+<img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-5-1.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-5-2.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-5-3.png" width="50%" />
 
 Viridis 10 Category
 -------------------
@@ -168,7 +241,7 @@ Viridis 10 Category
             axis.text = element_blank(),
             axis.ticks = element_blank())
 
-<img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-5-1.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-5-2.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-5-3.png" width="50%" />
+<img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-6-1.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-6-2.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-6-3.png" width="50%" />
 
 ### Color Blind Palette
 
@@ -219,7 +292,7 @@ Viridis 10 Category
             axis.text = element_blank(),
             axis.ticks = element_blank())
 
-<img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-6-1.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-6-2.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-6-3.png" width="50%" />
+<img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-7-1.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-7-2.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-7-3.png" width="50%" />
 
 ### Evo Palette
 
@@ -269,7 +342,7 @@ Viridis 10 Category
             axis.text = element_blank(),
             axis.ticks = element_blank())
 
-<img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-7-1.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-7-2.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-7-3.png" width="50%" />
+<img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-8-1.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-8-2.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-8-3.png" width="50%" />
 
 ### Evo Palette 2
 
@@ -324,7 +397,7 @@ Viridis 10 Category
             axis.text = element_blank(),
             axis.ticks = element_blank())
 
-<img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-8-1.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-8-2.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-8-3.png" width="50%" />
+<img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-9-1.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-9-2.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-9-3.png" width="50%" />
 
 ### Viridis Plasma
 
@@ -375,7 +448,7 @@ Viridis 10 Category
             axis.text = element_blank(),
             axis.ticks = element_blank())
 
-<img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-9-1.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-9-2.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-9-3.png" width="50%" />
+<img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-10-1.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-10-2.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-10-3.png" width="50%" />
 
 ### Viridis
 
@@ -426,7 +499,7 @@ Viridis 10 Category
             axis.text = element_blank(),
             axis.ticks = element_blank())
 
-<img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-10-1.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-10-2.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-10-3.png" width="50%" />
+<img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-11-1.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-11-2.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-11-3.png" width="50%" />
 
 ### Color Picker
 
@@ -473,7 +546,7 @@ Viridis 10 Category
             axis.text = element_blank(),
             axis.ticks = element_blank()) 
 
-<img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-11-1.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-11-2.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-11-3.png" width="50%" />
+<img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-12-1.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-12-2.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-12-3.png" width="50%" />
 
 Coolors
 
@@ -522,7 +595,7 @@ Coolors
             axis.text = element_blank(),
             axis.ticks = element_blank())   
 
-<img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-12-1.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-12-2.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-12-3.png" width="50%" />
+<img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-13-1.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-13-2.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-13-3.png" width="50%" />
 
 Coolors
 
@@ -571,4 +644,4 @@ Coolors
             axis.text = element_blank(),
             axis.ticks = element_blank()) 
 
-<img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-13-1.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-13-2.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-13-3.png" width="50%" />
+<img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-14-1.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-14-2.png" width="50%" /><img src="irr_color_palette_examples_files/figure-markdown_strict/unnamed-chunk-14-3.png" width="50%" />
