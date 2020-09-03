@@ -1,0 +1,537 @@
+"state_fips","county_fips","name","n1_out","n2_out","agi_out","n1_in","n2_in","agi_in"
+19,1,"Adair County Non-migrants",2761,5775,149122,2761,5775,149122
+19,1,"Adair County Total Migration-US and Foreign",151,264,5757,167,311,6431
+19,101,"Jefferson County Non-migrants",5795,11478,351551,5795,11478,351551
+19,101,"Jefferson County Total Migration-US and Foreign",436,700,18167,430,731,9155
+19,103,"Johnson County Non-migrants",49874,102595,4380931,49874,102595,4380931
+19,103,"Johnson County Total Migration-US and Foreign",4919,8079,289521,4194,6815,228449
+19,105,"Jones County Non-migrants",7378,15694,455080,7378,15694,455080
+19,105,"Jones County Total Migration-US and Foreign",445,841,20278,410,791,20641
+19,107,"Keokuk County Non-migrants",3663,7936,192784,3663,7936,192784
+19,107,"Keokuk County Total Migration-US and Foreign",207,384,8456,211,431,7959
+19,109,"Kossuth County Non-migrants",5981,12634,378468,5981,12634,378468
+19,109,"Kossuth County Total Migration-US and Foreign",355,633,16874,333,599,14500
+19,11,"Benton County Non-migrants",9616,21357,682239,9616,21357,682239
+19,11,"Benton County Total Migration-US and Foreign",611,1136,29462,604,1124,28781
+19,111,"Lee County Non-migrants",12558,25866,723501,12558,25866,723501
+19,111,"Lee County Total Migration-US and Foreign",630,1221,27287,549,1048,22075
+19,113,"Linn County Non-migrants",85638,180311,6763789,85638,180311,6763789
+19,113,"Linn County Total Migration-US and Foreign",4768,8634,346197,4750,8266,245263
+19,115,"Louisa County Non-migrants",4011,8944,235353,4011,8944,235353
+19,115,"Louisa County Total Migration-US and Foreign",262,495,9580,247,470,10606
+19,117,"Lucas County Non-migrants",3119,6933,167759,3119,6933,167759
+19,117,"Lucas County Total Migration-US and Foreign",176,349,7119,162,328,6747
+19,119,"Lyon County Non-migrants",4218,10559,285299,4218,10559,285299
+19,119,"Lyon County Total Migration-US and Foreign",161,284,6966,161,316,7124
+19,121,"Madison County Non-migrants",5638,13184,449048,5638,13184,449048
+19,121,"Madison County Total Migration-US and Foreign",453,835,24230,483,981,30662
+19,123,"Mahaska County Non-migrants",7586,16953,494659,7586,16953,494659
+19,123,"Mahaska County Total Migration-US and Foreign",517,1023,23268,427,825,19285
+19,125,"Marion County Non-migrants",11891,27072,925276,11891,27072,925276
+19,125,"Marion County Total Migration-US and Foreign",726,1269,38122,735,1435,39768
+19,127,"Marshall County Non-migrants",14405,32466,890149,14405,32466,890149
+19,127,"Marshall County Total Migration-US and Foreign",934,1777,42598,793,1517,31629
+19,129,"Mills County Non-migrants",5326,12032,398026,5326,12032,398026
+19,129,"Mills County Total Migration-US and Foreign",361,702,18823,364,733,19693
+19,13,"Black Hawk County Non-migrants",46826,96100,3191971,46826,96100,3191971
+19,13,"Black Hawk County Total Migration-US and Foreign",2880,4948,147202,2427,4233,112220
+19,131,"Mitchell County Non-migrants",3912,8670,237062,3912,8670,237062
+19,131,"Mitchell County Total Migration-US and Foreign",183,307,10637,224,411,9690
+19,133,"Monona County Non-migrants",3321,6882,188009,3321,6882,188009
+19,133,"Monona County Total Migration-US and Foreign",200,342,8140,163,338,7637
+19,135,"Monroe County Non-migrants",2692,5959,147405,2692,5959,147405
+19,135,"Monroe County Total Migration-US and Foreign",140,258,5087,171,316,7694
+19,137,"Montgomery County Non-migrants",3735,7793,208313,3735,7793,208313
+19,137,"Montgomery County Total Migration-US and Foreign",269,500,12192,227,455,9268
+19,139,"Muscatine County Non-migrants",16287,35230,1067535,16287,35230,1067535
+19,139,"Muscatine County Total Migration-US and Foreign",1005,1898,52058,871,1620,37814
+19,141,"O'Brien County Non-migrants",5330,11718,357006,5330,11718,357006
+19,141,"O'Brien County Total Migration-US and Foreign",348,657,12903,309,576,12698
+19,143,"Osceola County Non-migrants",2314,5158,126078,2314,5158,126078
+19,143,"Osceola County Total Migration-US and Foreign",145,286,7125,123,246,4742
+19,145,"Page County Non-migrants",5164,10852,296709,5164,10852,296709
+19,145,"Page County Total Migration-US and Foreign",352,655,14494,268,534,12768
+19,147,"Palo Alto County Non-migrants",3408,7167,186949,3408,7167,186949
+19,147,"Palo Alto County Total Migration-US and Foreign",208,347,8707,179,297,7128
+19,149,"Plymouth County Non-migrants",9593,21825,711232,9593,21825,711232
+19,149,"Plymouth County Total Migration-US and Foreign",631,1235,33995,562,1076,25574
+19,15,"Boone County Non-migrants",10027,21306,707752,10027,21306,707752
+19,15,"Boone County Total Migration-US and Foreign",750,1395,35743,721,1370,35429
+19,151,"Pocahontas County Non-migrants",2645,5610,152709,2645,5610,152709
+19,151,"Pocahontas County Total Migration-US and Foreign",194,347,7460,134,259,5902
+19,153,"Polk County Non-migrants",179333,385627,15111284,179333,385627,15111284
+19,153,"Polk County Total Migration-US and Foreign",12375,22368,746798,13343,23780,758910
+19,155,"Pottawattamie County Non-migrants",33624,71010,2192393,33624,71010,2192393
+19,155,"Pottawattamie County Total Migration-US and Foreign",2130,3895,101089,1997,3716,92374
+19,157,"Poweshiek County Non-migrants",6600,13706,429784,6600,13706,429784
+19,157,"Poweshiek County Total Migration-US and Foreign",515,868,27863,488,936,26823
+19,159,"Ringgold County Non-migrants",1647,3656,77506,1647,3656,77506
+19,159,"Ringgold County Total Migration-US and Foreign",81,165,3015,87,186,4728
+19,161,"Sac County Non-migrants",3860,8198,237337,3860,8198,237337
+19,161,"Sac County Total Migration-US and Foreign",210,367,8446,172,333,7749
+19,163,"Scott County Non-migrants",64590,136806,5373710,64590,136806,5373710
+19,163,"Scott County Total Migration-US and Foreign",4132,7703,287251,3905,7343,217336
+19,165,"Shelby County Non-migrants",4586,9885,311209,4586,9885,311209
+19,165,"Shelby County Total Migration-US and Foreign",273,478,12339,254,491,10491
+19,167,"Sioux County Non-migrants",11549,29981,864591,11549,29981,864591
+19,167,"Sioux County Total Migration-US and Foreign",550,1043,26509,488,1020,26597
+19,169,"Story County Non-migrants",28254,58448,2344935,28254,58448,2344935
+19,169,"Story County Total Migration-US and Foreign",3146,5006,151846,2492,4173,123332
+19,17,"Bremer County Non-migrants",8900,20078,679615,8900,20078,679615
+19,17,"Bremer County Total Migration-US and Foreign",569,987,28138,607,1156,29971
+19,171,"Tama County Non-migrants",6526,14115,378592,6526,14115,378592
+19,171,"Tama County Total Migration-US and Foreign",459,843,20220,378,762,16397
+19,173,"Taylor County Non-migrants",2186,4802,104068,2186,4802,104068
+19,173,"Taylor County Total Migration-US and Foreign",136,270,5725,129,266,5798
+19,175,"Union County Non-migrants",4399,9253,238774,4399,9253,238774
+19,175,"Union County Total Migration-US and Foreign",289,567,13329,232,456,8571
+19,177,"Van Buren County Non-migrants",2511,5618,133071,2511,5618,133071
+19,177,"Van Buren County Total Migration-US and Foreign",173,389,6285,128,250,6023
+19,179,"Wapello County Non-migrants",12085,25850,664325,12085,25850,664325
+19,179,"Wapello County Total Migration-US and Foreign",875,1637,35212,794,1596,29085
+19,181,"Warren County Non-migrants",18188,41769,1554803,18188,41769,1554803
+19,181,"Warren County Total Migration-US and Foreign",1413,2544,75097,1634,3189,89905
+19,183,"Washington County Non-migrants",8429,18764,530665,8429,18764,530665
+19,183,"Washington County Total Migration-US and Foreign",516,949,23034,486,964,25258
+19,185,"Wayne County Non-migrants",2178,5157,115569,2178,5157,115569
+19,185,"Wayne County Total Migration-US and Foreign",102,199,3962,105,232,3829
+19,187,"Webster County Non-migrants",12817,26633,795486,12817,26633,795486
+19,187,"Webster County Total Migration-US and Foreign",832,1491,37730,675,1222,27874
+19,189,"Winnebago County Non-migrants",4057,8433,242816,4057,8433,242816
+19,189,"Winnebago County Total Migration-US and Foreign",318,556,13255,247,441,8904
+19,19,"Buchanan County Non-migrants",7562,17135,473578,7562,17135,473578
+19,19,"Buchanan County Total Migration-US and Foreign",410,771,17968,437,879,19341
+19,191,"Winneshiek County Non-migrants",7791,16228,490697,7791,16228,490697
+19,191,"Winneshiek County Total Migration-US and Foreign",410,679,19655,359,634,18233
+19,193,"Woodbury County Non-migrants",36667,80146,2251500,36667,80146,2251500
+19,193,"Woodbury County Total Migration-US and Foreign",2159,4073,108078,2206,4175,79792
+19,195,"Worth County Non-migrants",2865,6125,168314,2865,6125,168314
+19,195,"Worth County Total Migration-US and Foreign",193,318,6875,177,279,6868
+19,197,"Wright County Non-migrants",4647,10215,265328,4647,10215,265328
+19,197,"Wright County Total Migration-US and Foreign",285,563,12539,243,479,9946
+19,21,"Buena Vista County Non-migrants",7500,17060,478745,7500,17060,478745
+19,21,"Buena Vista County Total Migration-US and Foreign",635,1206,25487,464,840,17437
+19,23,"Butler County Non-migrants",5528,12243,337343,5528,12243,337343
+19,23,"Butler County Total Migration-US and Foreign",307,523,12492,274,516,11644
+19,25,"Calhoun County Non-migrants",3639,7806,213579,3639,7806,213579
+19,25,"Calhoun County Total Migration-US and Foreign",227,412,10140,188,321,8659
+19,27,"Carroll County Non-migrants",8027,17660,604628,8027,17660,604628
+19,27,"Carroll County Total Migration-US and Foreign",449,803,22007,385,745,16523
+19,29,"Cass County Non-migrants",5091,10681,284558,5091,10681,284558
+19,29,"Cass County Total Migration-US and Foreign",270,472,11191,278,493,12131
+19,3,"Adams County Non-migrants",1441,3061,74421,1441,3061,74421
+19,3,"Adams County Total Migration-US and Foreign",94,190,3765,69,143,2696
+19,31,"Cedar County Non-migrants",7063,15196,387343,7063,15196,387343
+19,31,"Cedar County Total Migration-US and Foreign",494,892,26138,492,928,23944
+19,33,"Cerro Gordo County Non-migrants",16429,33232,1133139,16429,33232,1133139
+19,33,"Cerro Gordo County Total Migration-US and Foreign",1033,1828,51890,897,1659,45961
+19,35,"Cherokee County Non-migrants",4637,9662,282345,4637,9662,282345
+19,35,"Cherokee County Total Migration-US and Foreign",221,400,10982,211,391,8265
+19,37,"Chickasaw County Non-migrants",4678,10156,299165,4678,10156,299165
+19,37,"Chickasaw County Total Migration-US and Foreign",244,386,9052,203,371,7691
+19,39,"Clarke County Non-migrants",3355,7663,176801,3355,7663,176801
+19,39,"Clarke County Total Migration-US and Foreign",247,494,11028,251,502,11152
+19,41,"Clay County Non-migrants",6381,13289,439750,6381,13289,439750
+19,41,"Clay County Total Migration-US and Foreign",440,805,20651,384,711,17307
+19,43,"Clayton County Non-migrants",6920,14457,388860,6920,14457,388860
+19,43,"Clayton County Total Migration-US and Foreign",335,641,12586,366,685,17395
+19,45,"Clinton County Non-migrants",17721,37067,1058372,17721,37067,1058372
+19,45,"Clinton County Total Migration-US and Foreign",1031,1899,45746,921,1749,39616
+19,47,"Crawford County Non-migrants",6241,14614,354185,6241,14614,354185
+19,47,"Crawford County Total Migration-US and Foreign",388,761,15219,323,638,11859
+19,49,"Dallas County Non-migrants",30754,73371,3635281,30754,73371,3635281
+19,49,"Dallas County Total Migration-US and Foreign",3617,6528,278590,4672,8555,335788
+19,5,"Allamakee County Non-migrants",5441,11810,279816,5441,11810,279816
+19,5,"Allamakee County Total Migration-US and Foreign",260,479,10711,239,410,10537
+19,51,"Davis County Non-migrants",2838,7279,148986,2838,7279,148986
+19,51,"Davis County Total Migration-US and Foreign",159,327,8299,129,295,6003
+19,53,"Decatur County Non-migrants",2409,5369,141820,2409,5369,141820
+19,53,"Decatur County Total Migration-US and Foreign",193,336,7289,154,304,5682
+19,55,"Delaware County Non-migrants",6661,14939,393378,6661,14939,393378
+19,55,"Delaware County Total Migration-US and Foreign",319,535,14583,349,724,16718
+19,57,"Des Moines County Non-migrants",15116,30856,921447,15116,30856,921447
+19,57,"Des Moines County Total Migration-US and Foreign",849,1567,40961,746,1394,32456
+19,59,"Dickinson County Non-migrants",7095,14333,588907,7095,14333,588907
+19,59,"Dickinson County Total Migration-US and Foreign",491,893,33896,550,968,37610
+19,61,"Dubuque County Non-migrants",37647,79880,2877694,37647,79880,2877694
+19,61,"Dubuque County Total Migration-US and Foreign",1807,3198,150923,1641,2926,83123
+19,63,"Emmet County Non-migrants",3492,7371,199848,3492,7371,199848
+19,63,"Emmet County Total Migration-US and Foreign",222,380,8936,176,301,6187
+19,65,"Fayette County Non-migrants",7130,15092,383804,7130,15092,383804
+19,65,"Fayette County Total Migration-US and Foreign",474,835,17700,435,780,15739
+19,67,"Floyd County Non-migrants",5798,12695,347821,5798,12695,347821
+19,67,"Floyd County Total Migration-US and Foreign",407,755,18126,354,656,14154
+19,69,"Franklin County Non-migrants",3594,8127,217979,3594,8127,217979
+19,69,"Franklin County Total Migration-US and Foreign",215,428,9273,170,328,6542
+19,7,"Appanoose County Non-migrants",4383,9267,210402,4383,9267,210402
+19,7,"Appanoose County Total Migration-US and Foreign",206,398,7834,197,375,8491
+19,71,"Fremont County Non-migrants",2528,5469,155351,2528,5469,155351
+19,71,"Fremont County Total Migration-US and Foreign",157,317,6639,176,341,7470
+19,73,"Greene County Non-migrants",3378,7261,191512,3378,7261,191512
+19,73,"Greene County Total Migration-US and Foreign",190,326,8535,163,355,6470
+19,75,"Grundy County Non-migrants",4657,10378,383735,4657,10378,383735
+19,75,"Grundy County Total Migration-US and Foreign",287,548,16044,278,510,12633
+19,77,"Guthrie County Non-migrants",4032,8741,280275,4032,8741,280275
+19,77,"Guthrie County Total Migration-US and Foreign",294,560,13259,330,630,18268
+19,79,"Hamilton County Non-migrants",5652,12214,386420,5652,12214,386420
+19,79,"Hamilton County Total Migration-US and Foreign",335,610,16450,334,654,15265
+19,81,"Hancock County Non-migrants",4152,9013,258803,4152,9013,258803
+19,81,"Hancock County Total Migration-US and Foreign",237,422,9598,217,429,8893
+19,83,"Hardin County Non-migrants",6186,13399,338942,6186,13399,338942
+19,83,"Hardin County Total Migration-US and Foreign",419,832,20355,364,680,15925
+19,85,"Harrison County Non-migrants",5318,11594,332295,5318,11594,332295
+19,85,"Harrison County Total Migration-US and Foreign",302,558,13389,300,599,15248
+19,87,"Henry County Non-migrants",7019,15076,408239,7019,15076,408239
+19,87,"Henry County Total Migration-US and Foreign",461,891,19213,413,804,17438
+19,89,"Howard County Non-migrants",3661,7950,195280,3661,7950,195280
+19,89,"Howard County Total Migration-US and Foreign",165,296,8250,209,395,9224
+19,9,"Audubon County Non-migrants",2175,4547,133139,2175,4547,133139
+19,9,"Audubon County Total Migration-US and Foreign",97,177,4970,92,172,3426
+19,91,"Humboldt County Non-migrants",3598,7897,247059,3598,7897,247059
+19,91,"Humboldt County Total Migration-US and Foreign",196,376,9110,196,390,9487
+19,93,"Ida County Non-migrants",2670,5727,191511,2670,5727,191511
+19,93,"Ida County Total Migration-US and Foreign",151,263,6615,151,286,6344
+19,95,"Iowa County Non-migrants",6407,13960,425625,6407,13960,425625
+19,95,"Iowa County Total Migration-US and Foreign",364,617,17052,412,762,19900
+19,97,"Jackson County Non-migrants",7689,16227,433940,7689,16227,433940
+19,97,"Jackson County Total Migration-US and Foreign",411,682,15215,387,725,16102
+19,99,"Jasper County Non-migrants",13373,28900,863354,13373,28900,863354
+19,99,"Jasper County Total Migration-US and Foreign",922,1757,45881,942,1803,45623
+41,1,"Baker County Non-migrants",5565,11480,274088,5565,11480,274088
+41,1,"Baker County Total Migration-US and Foreign",369,702,15241,398,765,17750
+41,11,"Coos County Non-migrants",21669,43068,1256702,21669,43068,1256702
+41,11,"Coos County Total Migration-US and Foreign",1416,2559,69852,1874,3405,89355
+41,13,"Crook County Non-migrants",7826,16614,467038,7826,16614,467038
+41,13,"Crook County Total Migration-US and Foreign",652,1198,28981,987,1822,59271
+41,15,"Curry County Non-migrants",8267,15502,451318,8267,15502,451318
+41,15,"Curry County Total Migration-US and Foreign",709,1240,40423,932,1622,50851
+41,17,"Deschutes County Non-migrants",71440,144829,5811951,71440,144829,5811951
+41,17,"Deschutes County Total Migration-US and Foreign",5355,9263,345001,7585,13354,662369
+41,19,"Douglas County Non-migrants",36511,75399,1975864,36511,75399,1975864
+41,19,"Douglas County Total Migration-US and Foreign",2117,3749,98973,2578,4739,114980
+41,21,"Gilliam County Non-migrants",618,1249,36670,618,1249,36670
+41,21,"Gilliam County Total Migration-US and Foreign",53,104,3002,52,92,2305
+41,23,"Grant County Non-migrants",2421,4959,118750,2421,4959,118750
+41,23,"Grant County Total Migration-US and Foreign",148,290,5752,175,338,9263
+41,25,"Harney County Non-migrants",2321,5150,103106,2321,5150,103106
+41,25,"Harney County Total Migration-US and Foreign",156,330,7181,163,325,6842
+41,27,"Hood River County Non-migrants",9166,20623,684461,9166,20623,684461
+41,27,"Hood River County Total Migration-US and Foreign",743,1309,39852,745,1293,55418
+41,29,"Jackson County Non-migrants",79950,162079,5197804,79950,162079,5197804
+41,29,"Jackson County Total Migration-US and Foreign",4658,8034,239836,5479,9477,313645
+41,3,"Benton County Non-migrants",29181,58388,2504326,29181,58388,2504326
+41,3,"Benton County Total Migration-US and Foreign",3675,5730,189324,3271,5323,169928
+41,31,"Jefferson County Non-migrants",7305,16366,371087,7305,16366,371087
+41,31,"Jefferson County Total Migration-US and Foreign",619,1150,24601,753,1521,36410
+41,33,"Josephine County Non-migrants",29142,58796,1699366,29142,58796,1699366
+41,33,"Josephine County Total Migration-US and Foreign",1996,3408,82376,2396,4202,114170
+41,35,"Klamath County Non-migrants",21866,46173,1168096,21866,46173,1168096
+41,35,"Klamath County Total Migration-US and Foreign",1581,2890,73347,1853,3628,84387
+41,37,"Lake County Non-migrants",2429,5284,125297,2429,5284,125297
+41,37,"Lake County Total Migration-US and Foreign",183,378,8812,206,388,7900
+41,39,"Lane County Non-migrants",133608,260005,9198152,133608,260005,9198152
+41,39,"Lane County Total Migration-US and Foreign",8128,13240,385498,9119,14936,462384
+41,41,"Lincoln County Non-migrants",17247,33134,997450,17247,33134,997450
+41,41,"Lincoln County Total Migration-US and Foreign",1571,2674,78133,2046,3575,112013
+41,43,"Linn County Non-migrants",42579,91246,2530422,42579,91246,2530422
+41,43,"Linn County Total Migration-US and Foreign",3159,5771,139757,4078,7559,203202
+41,45,"Malheur County Non-migrants",8235,19668,383662,8235,19668,383662
+41,45,"Malheur County Total Migration-US and Foreign",616,1255,24091,659,1516,23240
+41,47,"Marion County Non-migrants",115501,257694,7687968,115501,257694,7687968
+41,47,"Marion County Total Migration-US and Foreign",7622,14312,385658,8671,16100,436106
+41,49,"Morrow County Non-migrants",3499,8916,199388,3499,8916,199388
+41,49,"Morrow County Total Migration-US and Foreign",288,599,12662,299,691,12378
+41,5,"Clackamas County Non-migrants",151190,321168,15315364,151190,321168,15315364
+41,5,"Clackamas County Total Migration-US and Foreign",13830,24100,975799,14936,26748,1068186
+41,51,"Multnomah County Non-migrants",307398,571036,25856434,307398,571036,25856434
+41,51,"Multnomah County Total Migration-US and Foreign",29500,47137,1986099,29991,43621,1853087
+41,53,"Polk County Non-migrants",26924,60181,1914624,26924,60181,1914624
+41,53,"Polk County Total Migration-US and Foreign",3053,5656,154119,3222,6222,149562
+41,55,"Sherman County Non-migrants",624,1276,39854,624,1276,39854
+41,55,"Sherman County Total Migration-US and Foreign",36,79,1562,47,107,2057
+41,57,"Tillamook County Non-migrants",9570,19286,606683,9570,19286,606683
+41,57,"Tillamook County Total Migration-US and Foreign",701,1229,31575,894,1578,51203
+41,59,"Umatilla County Non-migrants",24773,56300,1401640,24773,56300,1401640
+41,59,"Umatilla County Total Migration-US and Foreign",1520,2976,65197,1527,3053,63221
+41,61,"Union County Non-migrants",8955,19180,527331,8955,19180,527331
+41,61,"Union County Total Migration-US and Foreign",587,1086,23807,605,1140,28460
+41,63,"Wallowa County Non-migrants",2755,5496,149202,2755,5496,149202
+41,63,"Wallowa County Total Migration-US and Foreign",161,270,6987,190,353,10700
+41,65,"Wasco County Non-migrants",8916,18971,512071,8916,18971,512071
+41,65,"Wasco County Total Migration-US and Foreign",700,1334,33008,825,1507,39401
+41,67,"Washington County Non-migrants",214549,462571,20931809,214549,462571,20931809
+41,67,"Washington County Total Migration-US and Foreign",19016,33124,1353351,20005,33154,1325403
+41,69,"Wheeler County Non-migrants",422,826,16241,422,826,16241
+41,69,"Wheeler County Total Migration-US and Foreign",38,77,1398,29,59,1399
+41,7,"Clatsop County Non-migrants",14053,27898,875525,14053,27898,875525
+41,7,"Clatsop County Total Migration-US and Foreign",1310,2333,68182,1470,2646,77114
+41,71,"Yamhill County Non-migrants",35261,78395,2601899,35261,78395,2601899
+41,71,"Yamhill County Total Migration-US and Foreign",2750,4978,154141,3101,5864,197749
+41,9,"Columbia County Non-migrants",18175,38313,1243566,18175,38313,1243566
+41,9,"Columbia County Total Migration-US and Foreign",1276,2475,70088,1626,3052,87082
+51,1,"Accomack County Non-migrants",12696,25547,648808,12696,25547,648808
+51,1,"Accomack County Total Migration-US and Foreign",765,1460,32942,696,1304,33758
+51,101,"King William County Non-migrants",6445,13996,423071,6445,13996,423071
+51,101,"King William County Total Migration-US and Foreign",472,847,24411,609,1127,31652
+51,103,"Lancaster County Non-migrants",4628,8683,347227,4628,8683,347227
+51,103,"Lancaster County Total Migration-US and Foreign",271,487,16487,291,536,26732
+51,105,"Lee County Non-migrants",6162,13754,265396,6162,13754,265396
+51,105,"Lee County Total Migration-US and Foreign",265,554,9404,254,512,8201
+51,107,"Loudoun County Non-migrants",138834,346551,19882301,138834,346551,19882301
+51,107,"Loudoun County Total Migration-US and Foreign",12880,25424,1359749,14791,30409,1522040
+51,109,"Louisa County Non-migrants",12921,27046,866165,12921,27046,866165
+51,109,"Louisa County Total Migration-US and Foreign",983,1858,58237,1372,2631,87020
+51,11,"Appomattox County Non-migrants",5591,12212,307724,5591,12212,307724
+51,11,"Appomattox County Total Migration-US and Foreign",345,705,14219,385,735,16535
+51,111,"Lunenburg County Non-migrants",3789,7926,182453,3789,7926,182453
+51,111,"Lunenburg County Total Migration-US and Foreign",229,451,7625,216,402,8085
+51,113,"Madison County Non-migrants",4934,10514,273487,4934,10514,273487
+51,113,"Madison County Total Migration-US and Foreign",307,584,15182,321,592,19960
+51,115,"Mathews County Non-migrants",3354,6660,231619,3354,6660,231619
+51,115,"Mathews County Total Migration-US and Foreign",199,342,9873,259,488,17047
+51,117,"Mecklenburg County Non-migrants",10747,21798,544911,10747,21798,544911
+51,117,"Mecklenburg County Total Migration-US and Foreign",622,1139,30807,690,1318,37524
+51,119,"Middlesex County Non-migrants",4094,7854,274067,4094,7854,274067
+51,119,"Middlesex County Total Migration-US and Foreign",256,467,13445,330,609,20703
+51,121,"Montgomery County Non-migrants",26748,54239,2006142,26748,54239,2006142
+51,121,"Montgomery County Total Migration-US and Foreign",3091,4931,152445,2515,4226,133772
+51,125,"Nelson County Non-migrants",5858,11724,396681,5858,11724,396681
+51,125,"Nelson County Total Migration-US and Foreign",330,622,20937,443,817,31269
+51,127,"New Kent County Non-migrants",8321,17937,863822,8321,17937,863822
+51,127,"New Kent County Total Migration-US and Foreign",695,1340,55973,1035,2064,100182
+51,13,"Arlington County Non-migrants",90095,160083,13138782,90095,160083,13138782
+51,13,"Arlington County Total Migration-US and Foreign",18527,27408,1989247,16200,22781,1383220
+51,131,"Northampton County Non-migrants",4623,9282,277456,4623,9282,277456
+51,131,"Northampton County Total Migration-US and Foreign",268,475,12488,284,542,21501
+51,133,"Northumberland County Non-migrants",4759,9351,326304,4759,9351,326304
+51,133,"Northumberland County Total Migration-US and Foreign",322,618,17780,334,606,24293
+51,135,"Nottoway County Non-migrants",4757,10119,235681,4757,10119,235681
+51,135,"Nottoway County Total Migration-US and Foreign",281,574,10062,269,585,10628
+51,137,"Orange County Non-migrants",13179,27311,919390,13179,27311,919390
+51,137,"Orange County Total Migration-US and Foreign",1295,2515,71204,1486,2908,95110
+51,139,"Page County Non-migrants",8745,18000,442823,8745,18000,442823
+51,139,"Page County Total Migration-US and Foreign",388,716,17784,418,815,18408
+51,141,"Patrick County Non-migrants",5926,12437,283562,5926,12437,283562
+51,141,"Patrick County Total Migration-US and Foreign",277,543,11046,307,607,11191
+51,143,"Pittsylvania County Non-migrants",21590,45745,1141054,21590,45745,1141054
+51,143,"Pittsylvania County Total Migration-US and Foreign",1273,2376,50865,1244,2451,48106
+51,145,"Powhatan County Non-migrants",10628,23615,1002140,10628,23615,1002140
+51,145,"Powhatan County Total Migration-US and Foreign",738,1315,51039,907,1874,71800
+51,147,"Prince Edward County Non-migrants",5988,12057,311053,5988,12057,311053
+51,147,"Prince Edward County Total Migration-US and Foreign",600,1057,25360,516,988,21220
+51,149,"Prince George County Non-migrants",11142,24628,771324,11142,24628,771324
+51,149,"Prince George County Total Migration-US and Foreign",1866,4286,90978,1891,4641,90159
+51,15,"Augusta County Non-migrants",27907,58713,1740704,27907,58713,1740704
+51,15,"Augusta County Total Migration-US and Foreign",1870,3408,83154,2169,4156,102353
+51,153,"Prince William County Non-migrants",161889,373366,14842907,161889,373366,14842907
+51,153,"Prince William County Total Migration-US and Foreign",17951,36104,1269308,17690,35980,1096015
+51,155,"Pulaski County Non-migrants",11647,23398,626443,11647,23398,626443
+51,155,"Pulaski County Total Migration-US and Foreign",778,1390,34481,725,1323,39970
+51,157,"Rappahannock County Non-migrants",2818,5561,245346,2818,5561,245346
+51,157,"Rappahannock County Total Migration-US and Foreign",222,423,12887,200,384,17236
+51,159,"Richmond County Non-migrants",2776,5702,154696,2776,5702,154696
+51,159,"Richmond County Total Migration-US and Foreign",192,381,7054,262,532,12344
+51,161,"Roanoke County Non-migrants",35790,75595,2867149,35790,75595,2867149
+51,161,"Roanoke County Total Migration-US and Foreign",3316,5973,179856,3462,6554,191542
+51,163,"Rockbridge County Non-migrants",8019,16437,499380,8019,16437,499380
+51,163,"Rockbridge County Total Migration-US and Foreign",578,1064,29220,656,1246,35611
+51,165,"Rockingham County Non-migrants",30142,65407,2001091,30142,65407,2001091
+51,165,"Rockingham County Total Migration-US and Foreign",1773,3295,90463,2111,4111,118957
+51,167,"Russell County Non-migrants",7891,17283,389487,7891,17283,389487
+51,167,"Russell County Total Migration-US and Foreign",388,728,15289,372,821,15662
+51,169,"Scott County Non-migrants",6623,14213,316610,6623,14213,316610
+51,169,"Scott County Total Migration-US and Foreign",339,671,11046,297,608,10604
+51,17,"Bath County Non-migrants",1771,3425,104134,1771,3425,104134
+51,17,"Bath County Total Migration-US and Foreign",113,194,4948,102,172,4658
+51,171,"Shenandoah County Non-migrants",16565,33913,998054,16565,33913,998054
+51,171,"Shenandoah County Total Migration-US and Foreign",1132,2125,58619,1189,2171,61418
+51,173,"Smyth County Non-migrants",9994,20900,467180,9994,20900,467180
+51,173,"Smyth County Total Migration-US and Foreign",477,894,16561,407,822,13958
+51,175,"Southampton County Non-migrants",5931,12400,345499,5931,12400,345499
+51,175,"Southampton County Total Migration-US and Foreign",410,831,17618,440,911,18168
+51,177,"Spotsylvania County Non-migrants",46529,104507,3799358,46529,104507,3799358
+51,177,"Spotsylvania County Total Migration-US and Foreign",4535,8724,271563,5121,10313,297961
+51,179,"Stafford County Non-migrants",48130,114750,4615515,48130,114750,4615515
+51,179,"Stafford County Total Migration-US and Foreign",6125,12802,415650,6629,15017,423111
+51,181,"Surry County Non-migrants",2431,4815,135673,2431,4815,135673
+51,181,"Surry County Total Migration-US and Foreign",163,325,8217,184,364,8871
+51,183,"Sussex County Non-migrants",3272,6425,156381,3272,6425,156381
+51,183,"Sussex County Total Migration-US and Foreign",287,559,9951,266,544,9846
+51,185,"Tazewell County Non-migrants",12445,27244,681909,12445,27244,681909
+51,185,"Tazewell County Total Migration-US and Foreign",688,1391,30489,510,1035,22646
+51,187,"Warren County Non-migrants",14631,30588,983113,14631,30588,983113
+51,187,"Warren County Total Migration-US and Foreign",1287,2377,74125,1366,2495,83004
+51,19,"Bedford County Non-migrants",28425,61576,2127642,28425,61576,2127642
+51,19,"Bedford County Total Migration-US and Foreign",2045,3871,120210,2462,4915,152618
+51,191,"Washington County Non-migrants",17959,37811,1134696,17959,37811,1134696
+51,191,"Washington County Total Migration-US and Foreign",1122,2119,52299,1185,2274,55991
+51,193,"Westmoreland County Non-migrants",6622,13477,385728,6622,13477,385728
+51,193,"Westmoreland County Total Migration-US and Foreign",557,1077,30260,684,1346,47327
+51,195,"Wise County Non-migrants",10571,23463,507520,10571,23463,507520
+51,195,"Wise County Total Migration-US and Foreign",660,1297,23602,539,1094,18645
+51,197,"Wythe County Non-migrants",10025,20816,507776,10025,20816,507776
+51,197,"Wythe County Total Migration-US and Foreign",537,1013,21335,538,1019,21612
+51,199,"York County Non-migrants",23166,52748,2135691,23166,52748,2135691
+51,199,"York County Total Migration-US and Foreign",3454,7571,215470,3306,7732,206532
+51,21,"Bland County Non-migrants",2069,4244,109561,2069,4244,109561
+51,21,"Bland County Total Migration-US and Foreign",93,175,4138,117,247,4663
+51,23,"Botetourt County Non-migrants",12615,27437,961657,12615,27437,961657
+51,23,"Botetourt County Total Migration-US and Foreign",849,1493,45454,992,1970,58699
+51,25,"Brunswick County Non-migrants",5059,10245,232514,5059,10245,232514
+51,25,"Brunswick County Total Migration-US and Foreign",338,670,14134,298,627,14635
+51,27,"Buchanan County Non-migrants",5871,13156,285092,5871,13156,285092
+51,27,"Buchanan County Total Migration-US and Foreign",265,548,10164,242,531,7575
+51,29,"Buckingham County Non-migrants",5094,10556,245144,5094,10556,245144
+51,29,"Buckingham County Total Migration-US and Foreign",290,547,10677,372,764,16373
+51,3,"Albemarle County Non-migrants",37574,80056,4865173,37574,80056,4865173
+51,3,"Albemarle County Total Migration-US and Foreign",4223,7342,322856,4508,8104,417727
+51,31,"Campbell County Non-migrants",19471,41341,1165334,19471,41341,1165334
+51,31,"Campbell County Total Migration-US and Foreign",1721,3254,67907,1698,3270,69489
+51,33,"Caroline County Non-migrants",10832,22490,652553,10832,22490,652553
+51,33,"Caroline County Total Migration-US and Foreign",1099,2224,53504,1207,2325,60741
+51,35,"Carroll County Non-migrants",9894,20754,464710,9894,20754,464710
+51,35,"Carroll County Total Migration-US and Foreign",566,1073,18749,590,1138,24767
+51,36,"Charles City County Non-migrants",2767,5102,170732,2767,5102,170732
+51,36,"Charles City County Total Migration-US and Foreign",167,332,7735,179,328,11729
+51,37,"Charlotte County Non-migrants",4074,8655,189508,4074,8655,189508
+51,37,"Charlotte County Total Migration-US and Foreign",259,531,8883,226,463,9555
+51,41,"Chesterfield County Non-migrants",126776,279094,10815605,126776,279094,10815605
+51,41,"Chesterfield County Total Migration-US and Foreign",10288,19243,638786,11302,22251,685686
+51,43,"Clarke County Non-migrants",5489,11425,545020,5489,11425,545020
+51,43,"Clarke County Total Migration-US and Foreign",518,902,34634,571,1102,43132
+51,45,"Craig County Non-migrants",1796,3762,92895,1796,3762,92895
+51,45,"Craig County Total Migration-US and Foreign",88,176,4625,109,209,4486
+51,47,"Culpeper County Non-migrants",17533,39327,1284125,17533,39327,1284125
+51,47,"Culpeper County Total Migration-US and Foreign",1397,2720,82347,1615,3332,95056
+51,49,"Cumberland County Non-migrants",3338,6826,159728,3338,6826,159728
+51,49,"Cumberland County Total Migration-US and Foreign",270,506,10796,305,620,12430
+51,5,"Alleghany County Non-migrants",5533,11418,308870,5533,11418,308870
+51,5,"Alleghany County Total Migration-US and Foreign",321,611,14289,293,555,10923
+51,51,"Dickenson County Non-migrants",3870,8910,179335,3870,8910,179335
+51,51,"Dickenson County Total Migration-US and Foreign",202,396,6701,157,322,4795
+51,510,"Alexandria city Non-migrants",60660,106481,7689511,60660,106481,7689511
+51,510,"Alexandria city Total Migration-US and Foreign",13177,21963,1170539,12559,18773,1005155
+51,520,"Bristol city Non-migrants",5291,10657,271016,5291,10657,271016
+51,520,"Bristol city Total Migration-US and Foreign",621,1140,22340,568,1126,19920
+51,53,"Dinwiddie County Non-migrants",10062,20841,578848,10062,20841,578848
+51,53,"Dinwiddie County Total Migration-US and Foreign",790,1493,32416,939,1902,37948
+51,530,"Buena Vista city Non-migrants",2029,4198,88267,2029,4198,88267
+51,530,"Buena Vista city Total Migration-US and Foreign",256,513,7651,193,368,6545
+51,540,"Charlottesville city Non-migrants",14281,26183,1867477,14281,26183,1867477
+51,540,"Charlottesville city Total Migration-US and Foreign",2871,4541,168006,2386,3687,171599
+51,550,"Chesapeake city Non-migrants",82312,182094,6168394,82312,182094,6168394
+51,550,"Chesapeake city Total Migration-US and Foreign",9515,19091,518485,10045,20939,539155
+51,57,"Essex County Non-migrants",4187,8239,247334,4187,8239,247334
+51,57,"Essex County Total Migration-US and Foreign",302,595,14582,285,563,13630
+51,570,"Colonial Heights city Non-migrants",6530,12816,375195,6530,12816,375195
+51,570,"Colonial Heights city Total Migration-US and Foreign",887,1766,37024,896,1746,33908
+51,580,"Covington city Non-migrants",2142,4224,94933,2142,4224,94933
+51,580,"Covington city Total Migration-US and Foreign",215,389,6913,190,362,5693
+51,59,"Fairfax County Non-migrants",418618,913803,59342138,418618,913803,59342138
+51,59,"Fairfax County Total Migration-US and Foreign",46195,86521,4370226,40400,74377,3516353
+51,590,"Danville city Non-migrants",14117,27586,642207,14117,27586,642207
+51,590,"Danville city Total Migration-US and Foreign",1240,2382,49977,1035,2014,36158
+51,595,"Emporia city Non-migrants",1779,3714,74411,1779,3714,74411
+51,595,"Emporia city Total Migration-US and Foreign",248,536,8481,212,426,6605
+51,600,"Fairfax city Non-migrants",8819,18223,993199,8819,18223,993199
+51,600,"Fairfax city Total Migration-US and Foreign",1495,2605,122180,1464,2511,130279
+51,61,"Fauquier County Non-migrants",25932,57574,2778605,25932,57574,2778605
+51,61,"Fauquier County Total Migration-US and Foreign",2269,4181,190114,2489,5015,204330
+51,610,"Falls Church city Non-migrants",4698,10253,907327,4698,10253,907327
+51,610,"Falls Church city Total Migration-US and Foreign",935,1726,108801,994,1768,102976
+51,620,"Franklin city Non-migrants",2799,5633,143192,2799,5633,143192
+51,620,"Franklin city Total Migration-US and Foreign",333,737,13338,284,603,11664
+51,63,"Floyd County Non-migrants",5451,11707,294895,5451,11707,294895
+51,63,"Floyd County Total Migration-US and Foreign",298,549,12672,310,602,16481
+51,630,"Fredericksburg city Non-migrants",8447,16500,672535,8447,16500,672535
+51,630,"Fredericksburg city Total Migration-US and Foreign",2034,3673,110130,1990,3514,111778
+51,640,"Galax city Non-migrants",2131,4482,98344,2131,4482,98344
+51,640,"Galax city Total Migration-US and Foreign",277,537,8729,269,522,9965
+51,65,"Fluvanna County Non-migrants",9583,20296,674777,9583,20296,674777
+51,65,"Fluvanna County Total Migration-US and Foreign",776,1512,46051,923,1704,57748
+51,650,"Hampton city Non-migrants",46083,89500,2546895,46083,89500,2546895
+51,650,"Hampton city Total Migration-US and Foreign",6670,12618,280395,6570,11953,251040
+51,660,"Harrisonburg city Non-migrants",12746,26468,702314,12746,26468,702314
+51,660,"Harrisonburg city Total Migration-US and Foreign",1984,3436,87006,1429,2473,59486
+51,67,"Franklin County Non-migrants",19320,40786,1165143,19320,40786,1165143
+51,67,"Franklin County Total Migration-US and Foreign",1163,2145,67251,1147,2195,88055
+51,670,"Hopewell city Non-migrants",7630,15137,329002,7630,15137,329002
+51,670,"Hopewell city Total Migration-US and Foreign",1108,2237,42404,1039,2041,34871
+51,678,"Lexington city Non-migrants",1694,3296,137666,1694,3296,137666
+51,678,"Lexington city Total Migration-US and Foreign",296,493,14650,245,452,15625
+51,680,"Lynchburg city Non-migrants",23515,46476,1431503,23515,46476,1431503
+51,680,"Lynchburg city Total Migration-US and Foreign",2955,5502,145219,2614,4638,120456
+51,683,"Manassas city Non-migrants",14594,31718,1025461,14594,31718,1025461
+51,683,"Manassas city Total Migration-US and Foreign",2434,4788,136748,2244,4274,109013
+51,685,"Manassas Park city Non-migrants",5686,12694,372037,5686,12694,372037
+51,685,"Manassas Park city Total Migration-US and Foreign",1146,2267,65716,1176,2247,59225
+51,69,"Frederick County Non-migrants",32111,69553,2427790,32111,69553,2427790
+51,69,"Frederick County Total Migration-US and Foreign",2551,4859,143722,3233,6199,206752
+51,690,"Martinsville city Non-migrants",4393,8634,217478,4393,8634,217478
+51,690,"Martinsville city Total Migration-US and Foreign",533,1029,20559,468,1010,14678
+51,7,"Amelia County Non-migrants",4836,10326,286419,4836,10326,286419
+51,7,"Amelia County Total Migration-US and Foreign",318,603,13375,351,649,16736
+51,700,"Newport News city Non-migrants",60749,121138,3408966,60749,121138,3408966
+51,700,"Newport News city Total Migration-US and Foreign",8637,16647,376129,8082,15351,311907
+51,71,"Giles County Non-migrants",5960,12507,322152,5960,12507,322152
+51,71,"Giles County Total Migration-US and Foreign",323,604,16296,312,602,12884
+51,710,"Norfolk city Non-migrants",71113,138545,4267877,71113,138545,4267877
+51,710,"Norfolk city Total Migration-US and Foreign",12229,22659,528598,11664,19930,478428
+51,720,"Norton city Non-migrants",1245,2553,59432,1245,2553,59432
+51,720,"Norton city Total Migration-US and Foreign",146,292,5714,127,288,4410
+51,73,"Gloucester County Non-migrants",14409,29788,975115,14409,29788,975115
+51,73,"Gloucester County Total Migration-US and Foreign",1046,1948,53432,1125,2254,66238
+51,730,"Petersburg city Non-migrants",10523,19209,398605,10523,19209,398605
+51,730,"Petersburg city Total Migration-US and Foreign",2081,3805,74525,1876,3476,61187
+51,735,"Poquoson city Non-migrants",4482,10021,446152,4482,10021,446152
+51,735,"Poquoson city Total Migration-US and Foreign",421,833,28247,416,866,24579
+51,740,"Portsmouth city Non-migrants",31953,62938,1542618,31953,62938,1542618
+51,740,"Portsmouth city Total Migration-US and Foreign",4374,8660,180602,4273,7949,161256
+51,75,"Goochland County Non-migrants",8701,18572,1401366,8701,18572,1401366
+51,75,"Goochland County Total Migration-US and Foreign",652,1150,74983,978,1864,108483
+51,750,"Radford city Non-migrants",3604,7024,223330,3604,7024,223330
+51,750,"Radford city Total Migration-US and Foreign",612,976,21536,588,973,20941
+51,760,"Richmond city Non-migrants",71828,126344,5732318,71828,126344,5732318
+51,760,"Richmond city Total Migration-US and Foreign",11508,18834,610929,11268,17031,585694
+51,77,"Grayson County Non-migrants",4956,10227,220241,4956,10227,220241
+51,77,"Grayson County Total Migration-US and Foreign",302,605,11301,335,659,11586
+51,770,"Roanoke city Non-migrants",34656,65781,1891659,34656,65781,1891659
+51,770,"Roanoke city Total Migration-US and Foreign",3815,6883,179481,3682,6204,151711
+51,775,"Salem city Non-migrants",8831,17848,614831,8831,17848,614831
+51,775,"Salem city Total Migration-US and Foreign",1064,1922,45900,1043,1954,49355
+51,79,"Greene County Non-migrants",7118,15474,470463,7118,15474,470463
+51,79,"Greene County Total Migration-US and Foreign",581,1178,29249,637,1262,36966
+51,790,"Staunton city Non-migrants",9025,17014,529374,9025,17014,529374
+51,790,"Staunton city Total Migration-US and Foreign",1105,1860,44128,1199,2063,51788
+51,800,"Suffolk city Non-migrants",30488,66988,2298057,30488,66988,2298057
+51,800,"Suffolk city Total Migration-US and Foreign",3392,7172,195055,3680,7570,207618
+51,81,"Greensville County Non-migrants",2712,5523,126340,2712,5523,126340
+51,81,"Greensville County Total Migration-US and Foreign",273,531,8998,271,589,8479
+51,810,"Virginia Beach city Non-migrants",163989,337168,13422758,163989,337168,13422758
+51,810,"Virginia Beach city Total Migration-US and Foreign",18427,35238,977233,17619,32913,897185
+51,820,"Waynesboro city Non-migrants",8075,16013,439402,8075,16013,439402
+51,820,"Waynesboro city Total Migration-US and Foreign",1072,2010,47098,981,1799,41979
+51,83,"Halifax County Non-migrants",12051,25271,597809,12051,25271,597809
+51,83,"Halifax County Total Migration-US and Foreign",503,934,21435,494,912,20932
+51,830,"Williamsburg city Non-migrants",3628,6588,296432,3628,6588,296432
+51,830,"Williamsburg city Total Migration-US and Foreign",945,1597,51079,942,1664,60307
+51,840,"Winchester city Non-migrants",9506,18824,695820,9506,18824,695820
+51,840,"Winchester city Total Migration-US and Foreign",1710,3070,101028,1426,2480,72313
+51,85,"Hanover County Non-migrants",40270,88916,3771914,40270,88916,3771914
+51,85,"Hanover County Total Migration-US and Foreign",3099,5600,196821,3290,6281,216460
+51,87,"Henrico County Non-migrants",122922,253752,10732691,122922,253752,10732691
+51,87,"Henrico County Total Migration-US and Foreign",11868,21320,767239,12101,21264,733010
+51,89,"Henry County Non-migrants",17550,36280,830818,17550,36280,830818
+51,89,"Henry County Total Migration-US and Foreign",911,1802,30667,937,1865,34700
+51,9,"Amherst County Non-migrants",11172,23190,602412,11172,23190,602412
+51,9,"Amherst County Total Migration-US and Foreign",777,1456,32424,767,1490,36169
+51,91,"Highland County Non-migrants",894,1747,40428,894,1747,40428
+51,91,"Highland County Total Migration-US and Foreign",26,55,1154,26,46,1427
+51,93,"Isle of Wight County Non-migrants",13612,29564,1065565,13612,29564,1065565
+51,93,"Isle of Wight County Total Migration-US and Foreign",1247,2505,72982,1343,2761,94258
+51,95,"James City County Non-migrants",28366,60459,3120311,28366,60459,3120311
+51,95,"James City County Total Migration-US and Foreign",2900,5462,195067,3210,6226,257735
+51,97,"King and Queen County Non-migrants",2484,4870,136646,2484,4870,136646
+51,97,"King and Queen County Total Migration-US and Foreign",218,441,8620,218,394,8403
+51,99,"King George County Non-migrants",8788,19955,757380,8788,19955,757380
+51,99,"King George County Total Migration-US and Foreign",1029,2030,57209,1093,2186,62557
