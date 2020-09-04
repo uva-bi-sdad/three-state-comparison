@@ -1,0 +1,115 @@
+---
+title: "IRS Net Migration Viz"
+author: "Sarah McDonald"
+date: "9/4/2020"
+#output: html_document
+output: md_document
+always_allow_html: true
+---
+
+```{r, warning = F, message = F, echo = F}
+library(tidycensus)
+library(sf)
+library(ggplot2)
+library(cowplot)
+library(grid)
+library(gridExtra) 
+library(scales)
+
+P1<-c("#9FBE7A","#60999A","#31596E","#F9F1CB","#EB8E38","#D47417",
+
+      "#B2521A","#C3B144","#C1A321","#8B8F5C","#7F842C","#4E5827",
+
+      "#666084","#A1AFCC","#BCBBBC","#7C7B7C","#444444","#D9BCA3",
+
+      "#CCA98B","#8A7460")
+
+DIVERGENT<-colorRampPalette(c(P1[7], P1[4], P1[12]))(11)
+```
+
+```{r, echo = F, results = 'hide',message = F, warning=F}
+net_migration <- read.csv("~/three-state-comparison/data/IRS/net_migration.csv")
+
+net_migration$group = ""
+
+net_migration$group[which(net_migration$net_per_1000 < -40 & net_migration$net_per_1000 >= -50)] = "[-50, -40)"
+net_migration$group[which(net_migration$net_per_1000 < -30 & net_migration$net_per_1000 >= -40)] = "[-40, -30)"
+net_migration$group[which(net_migration$net_per_1000 < -20 & net_migration$net_per_1000 >= -30)] = "[-30, -20)"
+net_migration$group[which(net_migration$net_per_1000 < -10 & net_migration$net_per_1000 >= -20)] = "[-20, -10)"
+net_migration$group[which(net_migration$net_per_1000 < 0 & net_migration$net_per_1000 >= -10)] = "[-10, 0)"
+net_migration$group[which(net_migration$net_per_1000 == 0)] = "0"
+net_migration$group[which(net_migration$net_per_1000 > 0 & net_migration$net_per_1000 <= 10)] = "(0, 10]"
+net_migration$group[which(net_migration$net_per_1000 > 10 & net_migration$net_per_1000 <= 20)] = "(10, 20]"
+net_migration$group[which(net_migration$net_per_1000 > 20 & net_migration$net_per_1000 <= 30)] = "(20, 30]"
+net_migration$group[which(net_migration$net_per_1000 > 30 & net_migration$net_per_1000 <= 40)] = "(30, 40]"
+net_migration$group[which(net_migration$net_per_1000 > 40 & net_migration$net_per_1000 <= 50)] = "(40, 50]"
+
+
+net_migration$group <- factor(net_migration$group, levels = c("[-50, -40)", "[-40, -30)", "[-30, -20)", "[-20, -10)", "[-10, 0)", "0", 
+                                                              "(0, 10]", "(10, 20]", "(20, 30]", "(30, 40]", "(40, 50]"))
+
+state_geo <- get_acs(geography="county", 
+  state=c(19, 41, 51), #IA = 19, OR = 41, VA = 51
+  variables="C02003_001", # we have to define a variable for the function to work, will be removed since we don't need this data
+  year=2018, 
+  survey="acs5", 
+  cache_table=TRUE, 
+  output="wide", 
+  geometry=TRUE, 
+  keep_geo_vars=TRUE
+)
+
+state_geo <- state_geo[, c("STATEFP", "GEOID")]
+
+net_migration <- merge(net_migration, state_geo, by.x = "fips",by.y = "GEOID")
+st_geometry(net_migration) <- net_migration$geometry
+```
+
+```{r, fig.show="hold", out.width="50%", echo = F}
+for(i in c(19, 41, 51)){
+  gg <- ggplot() + 
+    geom_sf(data = net_migration[net_migration$STATEFP == i, ], aes(fill = group), color = "white")  +
+    scale_fill_manual(values = DIVERGENT, 
+                      labels = levels(net_migration$group),
+                      drop = F)+
+    theme(panel.background = element_rect(fill  = "transparent"),
+          plot.title = element_text(size = 14, face = "bold", hjust = 0.5),
+          legend.title = element_text(size = 11, face = "bold"),
+          legend.text = element_text(size = 11),
+          legend.position = "none", 
+          axis.title = element_blank(),
+          axis.text = element_blank(),
+          axis.ticks = element_blank()) +
+    labs(fill = "Net Migration (Per 1000)")
+  assign(paste("gg", i, sep = "_"), gg)
+}
+
+
+
+legend <- cowplot::get_legend(gg <- ggplot() + 
+    geom_sf(data = net_migration[net_migration$STATEFP == 51, ], aes(fill = group), color = "white")  +
+    scale_fill_manual(values = DIVERGENT, 
+                      labels = levels(net_migration$group),
+                      drop = F)+
+    theme(panel.background = element_rect(fill  = "transparent"),
+          plot.title = element_text(size = 14, face = "bold", hjust = 0.5),
+          legend.title = element_text(size = 11, face = "bold"),
+          legend.text = element_text(size = 11),
+          legend.position = "right", 
+          axis.title = element_blank(),
+          axis.text = element_blank(),
+          axis.ticks = element_blank()) +
+    labs(fill = "Net Migration (Per 1000)"))
+
+
+
+gg_19
+gg_41
+gg_51
+grid.newpage()
+grid.draw(legend)
+
+```
+
+
+

@@ -52,6 +52,46 @@ three_state_combined <- merge(three_state_outflow, three_state_inflow, by = c("s
 write.csv(three_state_combined, "data/IRS/three_state_combined.csv", row.names = F)
 
 
+# net migration data frame
+
+three_state_combined <- read.csv("data/IRS/three_state_combined.csv")
+
+
+# this checks that the net in and net out for total non-migrants is equal
+three_state_combined %>% filter(grepl("^[A-z].* (County|city) Non-migrants$", name)) %>%
+  mutate(check = ifelse(n1_out == n1_in, T, F)) %>%
+  summarize(sum(check == F))
+
+# using non migrants as a proxy for "total population", we have net migration as
+# following this definition data.un.org/Glossary.aspx?q=Net+migration+rate+(per+1%2C000+population)
+# (in migrants - out migrants/ nonmigrants) *1000
+
+net_migration <- three_state_combined %>%
+  select(state_fips, county_fips, name, n1_out, n1_in) %>%
+  mutate(county_fips = ifelse(nchar(county_fips) ==1, paste("00", county_fips, sep = ""), 
+                              ifelse(nchar(county_fips) == 2, paste("0", county_fips, sep = ""), county_fips)), 
+         state_fips = ifelse(nchar(state_fips) == 1, paste("0", state_fips, sep = ""), state_fips),
+         fips = paste(state_fips, county_fips, sep = "")) %>%
+  select(fips, name, n1_out, n1_in) %>% 
+  filter(grepl("^[A-z].* (County|city) Total Migration-US and Foreign$", name)) %>% 
+  mutate(three_state_combined %>% filter(grepl("^[A-z].* (County|city) Non-migrants$", name)) %>% select(n1_in) %>% rename(nonmigrants = n1_in),
+         net_per_1000 = ((n1_in - n1_out)/nonmigrants)*1000) 
+
+write.csv(net_migration, "data/IRS/net_migration.csv", row.names = F)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
