@@ -3,13 +3,16 @@ output:
   html_document:
     theme: cosmo
     css: www/theme.css
+    toc: true
+    toc_float: true
 ---
 <center>
 <a href = https://datascienceforthepublicgood.com/economic-mobility>
 <img src="www/AEMLogoGatesColorsBlack-11.png" width="200">
 </a>
 </center>
-## Three-State Comparison: Virginia, Iowa, and Oregon
+
+##Three-State Comparison: Virginia, Iowa, and Oregon
 
 ```{r, echo = F, message = F, warning= F}
 library(knitr)
@@ -60,7 +63,7 @@ knitr::kable(table1, caption = "TABLE 1: Population Change 2010 to 2019",
 
 With regard to changes in the age distribution from 2010 to 2019, the age groups with the largest increase (65 to 74 years) and loss (45 to 54 years) are the same for the three states: Iowa +33.78 percent / -20.83 percent, Oregon +46.05 percent / -14.18 percent, and Virginia +37.68 percent / -15.23 percent (1-YR ACS Estimates Table CP05).
 
-These changes can be summarized with the dependency ratio, the ratio of the dependent age population, young (0-17) and old (≥65), to the working age population (18 to 64). The dependency ratio captures the relation between the number of people who aren’t of working age and the number of people who are; the relation between the number of people who pay little or no taxes and the people who pay taxes. The higher the ratio, the greater the burden of support on working people and governments to support the infrastructure that serves the young and the elderly. Low dependency ratios can promote economic growth whereas high dependency ratios can decrease growth since a larger portion of government expenditures will go towards education, healthcare, and pensions.
+These changes can be summarized with the dependency ratio, the ratio of the dependent age population, young (0-17) and old (≥65), to the working age population (18 to 64). The dependency ratio captures the relation between the number of people who aren’t of working age and the number of people who are; the relation between the number of people who pay little or no taxes and the people who pay taxes. The higher the ratio, the greater the burden of support on working people and governments to support the infrastructure that serves the young and the elderly. Low dependency ratios, under appropriate conditions, could promote economic growth.  High dependency ratios may translate into increasing government expenditures towards education, healthcare, and pensions. 
 
 The age dependency ratio can be partitioned into a child dependency ratio and an old-age dependency ratio. The trend in the U.S. since 2000 has been a decrease in the child dependency ratio and an increase in the old-age ratio, this is also seen across the three states.
 
