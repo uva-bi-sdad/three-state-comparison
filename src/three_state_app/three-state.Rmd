@@ -2,7 +2,10 @@
 output: 
   html_document:
     theme: cosmo
+    css: www/theme.css
 ---
+
+## Three-State Comparison: Virginia, Iowa, and Oregon
 
 ```{r, echo = F, message = F, warning= F}
 library(knitr)

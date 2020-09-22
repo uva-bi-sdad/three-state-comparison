@@ -3,10 +3,6 @@ library(shinythemes)
 
 ui <- fluidPage(
   theme = shinytheme("cosmo"),
-  
-  fluidRow(width = 12, style = "margin = 20px",  
-      column(12, align = "center", h2(strong("Three-State Comparison: Virginia, Iowa, and Oregon")))
-  ),
 
   
   fluidRow(width = 12, style = "margin = 20px",
