@@ -4,6 +4,13 @@ output:
     theme: cosmo
 ---
 
+```{r, echo = F, message = F, warning= F}
+library(knitr)
+library(kableExtra)
+library(dplyr)
+```
+
+
 This is a descriptive comparison between Iowa, Oregon, and Virginia guided by Opportunity Insights’ [Opportunity Atlas](https://opportunityatlas.org/) and their 2020 [Economic Tracker](https://tracktherecovery.org/) (Chetty et al. 2020a; Opportunity Insights Team 2020). The Opportunity Atlas uses Census data at the neighborhood level to construct an interactive mapping tool that facilitates learning from the visualization of spatial patterns (Opportunity Insights Team 2020). Their goal is to motivate research aimed at establishing the causal effects of economic mobility in support of policies that will increase opportunity. The Economic Tracker was constructed in response to COVID-19 to follow economic activity in near real-time.
 
 Chetty et al. (2014) identified five core neighborhood characteristics that correlate with economic mobility. Neighborhoods with high economic mobility have less residential segregation and income inequality, greater social capital and family stability, and provide a great primary school education. We make our comparisons using this taxonomy and the most current data from the American Community Survey (ACS), MIT federal election data, and the IRS migration data. We present the results through data visualizations aggregated at the county level for Iowa and Oregon and at the county and independent city level for Virginia. The 38 independent cities of Virginia are classified by the Census Bureau as county equivalents. To provide additional insights, each aggregation level is identified using the 2010 Index of Relative Rurality (IRR) <span id="ref1a">[[1]](#ref1)</span>. The index uses population size, population density, extent of urbanized area, and distance to the nearest metro area, to construct a continuous measure that provides a multi-faceted measure of rurality. The IRR ranges from the most rural, 1.00, to the most urban, 0.00. The range of the rurality index for our three states is the most urban, Arlington County, VA (0.12) to the most rural, Wheeler County, OR (0.67) (see IRR Figure). To put the value of the index into perspective, the smallest rurality index in the United States is from New York County, NY (0.04) and the largest is from Northwest Arctic Borough, AK (0.89).
@@ -24,7 +31,23 @@ While Oregon’s economy was traditionally based on agriculture and forestry, th
 
 Of the three states, Virginia has the largest population, 8,535,539 and the smallest total area, 42,774.93 square miles. Virginia’s population has grown 6.7 percent from 2010; Oregon has had the largest population increase from 2010, 10.1 percent, and Iowa the smallest 3.6 percent.
 
-TABLE 1
+```{r, echo = F}
+table1 <- data.frame(State = c("Iowa", "Oregon", "Virginia"), 
+                     `Population 2010`= c("3,046,871", "3,831,079", "8,001,049"), 
+                     `Population 2019` = c("3,155,070", "4,217,737", "8,535,519"), 
+                     `Total Area Sq. Miles` = c("56,272.81", "98,378.54", "42,774.93"))
+
+knitr::kable(table1, caption = "TABLE 1: Population Change 2010 to 2019", 
+             col.names = c("State", "Population 2010", "Population 2019", "Total Area Sq. Miles")) %>%
+    kable_styling(bootstrap_options = c("striped", "hover"), full_width = F, position = "center") %>%
+   footnote(general = "Census Quick Fact https://www.census.gov/quickfacts/fact/table/IA,VA,OR/RHI12521",
+           general_title = "",
+           footnote_as_chunk = T
+           )
+  
+
+```
+
 
 With regard to changes in the age distribution from 2010 to 2019, the age groups with the largest increase (65 to 74 years) and loss (45 to 54 years) are the same for the three states: Iowa +33.78 percent / -20.83 percent, Oregon +46.05 percent / -14.18 percent, and Virginia +37.68 percent / -15.23 percent (1-YR ACS Estimates Table CP05).
 
