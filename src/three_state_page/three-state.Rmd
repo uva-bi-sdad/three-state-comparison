@@ -88,9 +88,9 @@ knitr::kable(table2, caption = "TABLE 2: Age, Child, and Old-age Dependency Rati
 
 Box plots display both ratios by county/city where the IRR is also plotted to evaluate rurality trends. The majority of county/city old-age dependency ratios for the three states is higher than the U.S. rate (dashed horizontal line). The rate in Virginia is lower in more urban counties/cities an indication of a larger working-class population (olive filled circles). Across all three states the old-age dependency ratios in the upper quartile are located in more rural areas. The child dependency ratios are higher than the old-age ratios in all three states and indication there are more children than dependents; but where the difference was approximately two-fold in 2000 it is now less than one and a half. In Virginia the child dependency ratio is lower in more rural areas but this is does not appear to be the case in Iowa and Oregon.
 
-  | 
-- | - 
-![alt](www/fig2.png) | ![alt](www/fig3.png)
+<div align="center">
+![](www/fig23.jpeg){ width=75% }
+</div>
 
 ### Core Neighborhood Characteristics
 This section explores some of the neighborhood characteristics identified in Chetty et al. (2014) that impact economic mobility: residential segregation, income inequality, social capital, family stability, and primary school education.
