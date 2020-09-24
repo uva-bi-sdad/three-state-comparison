@@ -7,7 +7,7 @@ output:
     toc_float: true
 ---
 <center>
-<a href = https://datascienceforthepublicgood.com/economic-mobility>
+<a href = "https://datascienceforthepublicgood.com/economic-mobility/community-insights">
 <img src="www/AEMLogoGatesColorsBlack-11.png" width="200">
 </a>
 </center>
